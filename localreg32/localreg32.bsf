@@ -1,0 +1,121 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 288 304)
+	(text "localreg32" (rect 115 -1 153 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 288 20 300)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "resetn" (rect 0 0 24 12)(font "Arial" (font_size 8)))
+		(text "resetn" (rect 4 61 40 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 112 72)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "writedata[31..0]" (rect 0 0 57 12)(font "Arial" (font_size 8)))
+		(text "writedata[31..0]" (rect 4 101 100 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 112 112)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "write" (rect 0 0 17 12)(font "Arial" (font_size 8)))
+		(text "write" (rect 4 133 34 144)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 112 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "read" (rect 0 0 17 12)(font "Arial" (font_size 8)))
+		(text "read" (rect 4 149 28 160)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 112 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "byteenable[3..0]" (rect 0 0 62 12)(font "Arial" (font_size 8)))
+		(text "byteenable[3..0]" (rect 4 165 100 176)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 112 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "chipselect" (rect 0 0 37 12)(font "Arial" (font_size 8)))
+		(text "chipselect" (rect 4 181 64 192)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 112 192)(line_width 1))
+	)
+	(port
+		(pt 0 232)
+		(input)
+		(text "clock" (rect 0 0 20 12)(font "Arial" (font_size 8)))
+		(text "clock" (rect 4 221 34 232)(font "Arial" (font_size 8)))
+		(line (pt 0 232)(pt 112 232)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(output)
+		(text "readdata[31..0]" (rect 0 0 57 12)(font "Arial" (font_size 8)))
+		(text "readdata[31..0]" (rect 4 117 94 128)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 112 128)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(output)
+		(text "Q_export[31..0]" (rect 0 0 61 12)(font "Arial" (font_size 8)))
+		(text "Q_export[31..0]" (rect 4 261 94 272)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 112 272)(line_width 3))
+	)
+	(drawing
+		(text "clock_reset" (rect 46 43 158 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 117 67 276 144)(font "Arial" (color 0 0 0)))
+		(text "avalon_slave_0" (rect 23 83 130 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "writedata" (rect 117 107 288 224)(font "Arial" (color 0 0 0)))
+		(text "readdata" (rect 117 123 282 256)(font "Arial" (color 0 0 0)))
+		(text "write" (rect 117 139 264 288)(font "Arial" (color 0 0 0)))
+		(text "read" (rect 117 155 258 320)(font "Arial" (color 0 0 0)))
+		(text "byteenable" (rect 117 171 294 352)(font "Arial" (color 0 0 0)))
+		(text "chipselect" (rect 117 187 294 384)(font "Arial" (color 0 0 0)))
+		(text "clock_sink" (rect 52 203 164 419)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 117 227 252 464)(font "Arial" (color 0 0 0)))
+		(text "conduit_end" (rect 43 243 152 499)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "readdata" (rect 117 267 282 544)(font "Arial" (color 0 0 0)))
+		(text " system " (rect 253 288 554 586)(font "Arial" ))
+		(line (pt 112 32)(pt 176 32)(line_width 1))
+		(line (pt 176 32)(pt 176 288)(line_width 1))
+		(line (pt 112 288)(pt 176 288)(line_width 1))
+		(line (pt 112 32)(pt 112 288)(line_width 1))
+		(line (pt 113 52)(pt 113 76)(line_width 1))
+		(line (pt 114 52)(pt 114 76)(line_width 1))
+		(line (pt 113 92)(pt 113 196)(line_width 1))
+		(line (pt 114 92)(pt 114 196)(line_width 1))
+		(line (pt 113 212)(pt 113 236)(line_width 1))
+		(line (pt 114 212)(pt 114 236)(line_width 1))
+		(line (pt 113 252)(pt 113 276)(line_width 1))
+		(line (pt 114 252)(pt 114 276)(line_width 1))
+		(line (pt 0 0)(pt 288 0)(line_width 1))
+		(line (pt 288 0)(pt 288 304)(line_width 1))
+		(line (pt 0 304)(pt 288 304)(line_width 1))
+		(line (pt 0 0)(pt 0 304)(line_width 1))
+	)
+)

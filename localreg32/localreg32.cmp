@@ -1,0 +1,14 @@
+	component localreg32 is
+		port (
+			resetn     : in  std_logic                     := 'X';             -- reset_n
+			writedata  : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			readdata   : out std_logic_vector(31 downto 0);                    -- readdata
+			write      : in  std_logic                     := 'X';             -- write
+			read       : in  std_logic                     := 'X';             -- read
+			byteenable : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- byteenable
+			chipselect : in  std_logic                     := 'X';             -- chipselect
+			clock      : in  std_logic                     := 'X';             -- clk
+			Q_export   : out std_logic_vector(31 downto 0)                     -- readdata
+		);
+	end component localreg32;
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pinplan
+ variation_name="reg32_avalon_interface_0"
+ megafunction_name="REG32_AVALON_INTERFACE"
+ specifies="all_ports">
+ <global>
+  <pin name="resetn" direction="input" scope="external" />
+  <pin name="writedata[31..0]" direction="input" scope="external" />
+  <pin name="readdata[31..0]" direction="output" scope="external" />
+  <pin name="write" direction="input" scope="external" />
+  <pin name="read" direction="input" scope="external" />
+  <pin name="byteenable[3..0]" direction="input" scope="external" />
+  <pin name="chipselect" direction="input" scope="external" />
+  <pin name="clock" direction="input" scope="external" />
+  <pin name="Q_export[31..0]" direction="output" scope="external" />
+ </global>
+</pinplan>

@@ -1,5 +1,5 @@
 
-module qsysclib (
+module embedded_system (
 	clk_clk,
 	resetn_reset_n,
 	to_hex_readdata);	
